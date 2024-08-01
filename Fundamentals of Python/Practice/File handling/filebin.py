@@ -1,0 +1,1 @@
+filebinptr = open("binfile","wb")
