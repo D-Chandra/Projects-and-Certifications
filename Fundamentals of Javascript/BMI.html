@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>This is a simple BMI Calculator</title>
+    <script lang="javascript">
+      function bmi(weight ,height)
+      {
+        var calcbmi=(weight/(height*height));
+        document.write("Your BMI is" +calcbmi);
+        console.log(calcbmi);
+      alert(typeof(weight) +" "+ typeof(height));
+      }
+    </script>
+  </head>
+  <body>
+    <script lang="javascript">
+      var in1=prompt("Enter the Weight in kg");
+      var in2=prompt("Enter the Height in meteres");
+      console.log(in1,in2);
+    </script>
+    <center>
+    <h1>
+      <input type="button" value="click here to submit the data" onclick="bmi(in1,in2)" />
+    </h1>
+    </center>
+  </body>
+</html>

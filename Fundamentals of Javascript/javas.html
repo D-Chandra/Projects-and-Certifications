@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First javascript</title>
+  </head>
+  <script lang="javascript">
+    function take(register){
+      alert("Your registration number is now registered::" + register);
+     document.write("Your registration number is::" +register);
+
+    }
+    </script>
+  <body>
+    <script>
+        var num=prompt("Enter your registration number","NULL");
+        if(confirm("Do you want to conform that registration number")==true)
+        {
+          alert("Then click on confirm button on next page");
+        }
+        else{
+            alert("Press F5");
+        }
+    </script>
+    <br>
+    <input type="button" value="Click to register" onclick="take(num)">
+
+  </body>
+</html>

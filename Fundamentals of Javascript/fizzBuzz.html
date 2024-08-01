@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="fizzbuzz.css" />
+  <title>FizzBuzz</title>
+</head>
+
+<body>
+  <center class="first">
+  <h1>
+    "Hello World Go to the console to performe operations"
+  </h1>
+  </center>
+  <script lang="javascript">
+    var count = 1;
+    var array = [];
+
+    function fizzbuzz() {
+      //array.push(count);
+      while (count <= 100) {
+        if (count % 3 === 0 && count % 5 === 0) {
+          array.push("Fizz");
+        } else if (count % 3 === 0) {
+          array.push("Buzz")
+        } else if (count % 5 === 0) {
+          array.push("FizzBuzz");
+        } else {
+          array.push(count);
+        }
+        count++;
+      }
+  console.log(array);
+    }
+  </script>
+
+</body>
+
+</html>

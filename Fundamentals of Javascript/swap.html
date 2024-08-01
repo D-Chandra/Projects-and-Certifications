@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Swapping Values</title>
+  </head>
+  <script language="javascript">
+    function swapwith(c,d)
+    {
+          alert("Your First Value is ::" +c + "and your second Value is ::" +d );
+          var e;
+          e=parseInt(c);
+          c=parseInt(d);
+          d=parseInt(e);
+          document.write("Your First Value is ::" +c  + "and your second Value is ::" , +d);
+    }
+    function swapwithout(c,d)
+    {
+          alert("Your First Value is ::" +c + "and your second Value is ::" +d );
+          c=parseInt(c+d);
+          d=parseInt(c-d);
+          c=parseInt(c-d);
+          alert("Type Of variable is" +typeof(c));
+          document.write("Your First Value is ::" +c  + "and your second Value is ::" , +d);
+    }
+
+  </script>
+  <body>
+
+    <script language="javascript">
+        var a=parseInt(prompt("Enter Your First value","0"));
+        var b=parseInt(prompt("Enter Your Second Value","0"));
+    </script>
+    <center>
+      <h1>
+        <br />
+        <input type="button" value="click to View values using 3rd variable" onclick="swapwith(a,b)" />
+        <br />
+        <input type="button" value="click to View values without using 3rd variable" onclick="swapwithout(a,b)" />
+      </h1>
+    </center>
+
+  </body>
+</html>

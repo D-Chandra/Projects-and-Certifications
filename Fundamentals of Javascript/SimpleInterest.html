@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculate Simple Interest</title>
+  </head>
+  <script language="javascript">
+    function SI(principal,rate,time)
+    {
+      var Simpleinterest=parseInt((principal*rate*time)/100);
+      alert("Calculation Successful");
+      document.write("The Simple Interest is::" +Simpleinterest);
+    }
+  </script>
+  <script language="javascript">
+      function init(){
+      var p= parseInt(prompt("Enter the Principal Amount::","0"));
+      var r= parseInt(prompt("Enter The rate of ::","0"));
+      var t= parseInt(prompt("Enter the timeperiod in Years::","0"));
+    }
+    </script>
+  <body>
+<center>
+  <h1>
+    <input type="button" Value="Click To Enter The Values" onclick="init()" /> <br /><br />
+    <input type="button" Value="Click To View the Simpleinterest" onclick="SI(p,r,t)" />
+
+  </h1>
+</center>
+  </body>
+</html>

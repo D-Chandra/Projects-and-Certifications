@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Party Guest List check</title>
+    <script lang="javascript">
+      function guestlist(name)
+      {
+        var guests = ["Diwanshu", "Uttam", "Ajay", "Aditya", "Subham", "Bikash", "Navin", "Jaffin", "Aporva"];
+        alert("There are total "+guests.length +" guests in the party Click On Ok Button To Check whether You Are in the Party Or Not");
+        if(guests.includes(name))
+        {
+          document.write("Welcome to the party " +name );
+        }
+        else
+        {
+          document.write("!Ops ! Your name not Found in The List Contact The Administrator " +"7909041974");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script lang="javascript">
+      var guestname=prompt("Enter Your First Name You Have Given To Enter into the Party");
+    </script>
+    <h1>
+      <center>
+      <input type="button" Value="Click To Check Your Validations" onclick="guestlist(guestname)" />
+      </center>
+    </h1>
+
+  </body>
+</html>

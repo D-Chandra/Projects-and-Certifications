@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arithmetic operators</title>
+  </head>
+  <script language="javascript">
+      function swtch()
+      {
+        var choice=parseInt(prompt("Enter Your Choice"));
+        switch(choice)
+        {
+          case 1:{
+                    var a=parseInt(prompt("Enter the First Number"));
+                    var b=parseInt(prompt("Enter The Second Number"));
+                    var c=a+b;
+                    alert("The Submation of your Numbers is::" +c);
+                    break;
+                }
+          case 2:{
+                    var a=parseInt(prompt("Enter the First Number"));
+                    var b=parseInt(prompt("Enter The Second Number"));
+                    var c=a*b;
+                    alert("The Product of Your Numbers is::" +c);
+                }
+          case 3:{
+                    var a=parseInt(prompt("Enter the First Number"));
+                    var b=parseInt(prompt("Enter The Second Number"));
+                    var c=a/b;
+                    alert("Result Of Your Division is::"+c);
+                 }
+          case 4:{
+                    var a=parseInt(prompt("Enter the First Number"));
+                    var b=parseInt(prompt("Enter The Second Number"));
+                    var c=a%b;
+                    alert("Result Of Your Mod is::"+c);
+                 }
+          case 5:{
+                    var a=parseInt(prompt("Enter the First Number"));
+                    var b=parseInt(prompt("Enter The Second Number"));
+                    var c=a-b;
+                    alert("Result Of Your Subtraction is::"+c);
+                 }
+        }
+      }
+  </script>
+  <body>
+    <center>
+<script language="javascript">
+      document.write("1.For SUM"+ "<br />" + "2.For multiplication"+ "<br />" +"3.For Division" + "<br />" +"4.For Modulus" + "5.For Subtraction");
+</script>
+    <br />
+    <input type="button" value="Click For The Submission Of Choice" onclick="swtch()" />
+    </center>
+<br />
+
+  </body>
+</html>

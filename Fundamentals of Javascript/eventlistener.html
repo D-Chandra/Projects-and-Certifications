@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Event listener</title>
+  </head>
+  <body>
+    <center>
+      <h1>
+    <button>Click Me Please</button>
+    </h1>
+    </center>
+    <script lang="javascript">
+      document.querySelector('button').addEventListener('click', (event) => {
+        event.target.textContent = "Clicked Before"
+      });
+    </script>
+  </body>
+</html>
